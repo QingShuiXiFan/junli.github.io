@@ -6,7 +6,7 @@
   <link href="http://qingshuixifan.github.io/atom.xml" rel="self"/>
   
   <link href="http://qingshuixifan.github.io/"/>
-  <updated>2020-11-12T02:54:12.400Z</updated>
+  <updated>2020-11-12T08:23:02.978Z</updated>
   <id>http://qingshuixifan.github.io/</id>
   
   <author>
@@ -17,11 +17,68 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>【Git】Git Cheatsheet</title>
+    <link href="http://qingshuixifan.github.io/2020/11/12/%E3%80%90Git%E3%80%91Git%20Cheatsheet/"/>
+    <id>http://qingshuixifan.github.io/2020/11/12/%E3%80%90Git%E3%80%91Git%20Cheatsheet/</id>
+    <published>2020-11-12T08:07:21.219Z</published>
+    <updated>2020-11-12T08:23:02.978Z</updated>
+    
+    <content type="html"><![CDATA[<p> <img src="https://s3.ax1x.com/2020/11/12/BzCsNF.png" alt="x"></p><p><img src="https://s3.ax1x.com/2020/11/12/BzCrAU.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt; &lt;img src=&quot;https://s3.ax1x.com/2020/11/12/BzCsNF.png&quot; alt=&quot;x&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://s3.ax1x.com/2020/11/12/BzCrAU.png&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="IT" scheme="http://qingshuixifan.github.io/categories/IT/"/>
+    
+    
+    <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
+    
+    <category term="Git" scheme="http://qingshuixifan.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Data Structure】Union-find data structure</title>
+    <link href="http://qingshuixifan.github.io/2020/11/12/%E3%80%90Data%20Structure%E3%80%91Union-find%20data%20structure/"/>
+    <id>http://qingshuixifan.github.io/2020/11/12/%E3%80%90Data%20Structure%E3%80%91Union-find%20data%20structure/</id>
+    <published>2020-11-12T08:01:03.264Z</published>
+    <updated>2020-11-12T08:06:53.792Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h2><hr><p>A disjoint-set data structure (also called union-find data structure) is a data structure that tracks a set of elements partitioned into a number of disjoint (overlapping) subsets.</p><h2 id="Operations"><a href="#Operations" class="headerlink" title="Operations"></a>Operations</h2><hr><ul><li><strong>Union</strong>: Add new sets/merge existing sets</li><li><strong>Find</strong>: Determine whether elements are in the same set</li></ul><h2 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h2><hr><ul><li>The <code>representative element</code> (one without a parent, or whose parent is itself) is used to represent a subset</li><li>All the elements in a subset compose a tree structure whose root is <code>representative element</code></li><li>if an element has a parent, the element is part of whatever set is identified by following the chain of parents upwards until a <code>representative element </code> is reached at the root of the tree</li><li>If the <code>representative element</code> of the two elements is the same, then they belong to the same subset</li></ul><h2 id="Code-Snippets"><a href="#Code-Snippets" class="headerlink" title="Code Snippets"></a>Code Snippets</h2><hr><h3 id="Initialization"><a href="#Initialization" class="headerlink" title="Initialization"></a>Initialization</h3><hr><h4 id="Use-a-struct-or-class"><a href="#Use-a-struct-or-class" class="headerlink" title="Use a struct or class"></a>Use a struct or class</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX 10000</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Node</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> data;</span><br><span class="line">    <span class="keyword">int</span> rank;</span><br><span class="line">    <span class="keyword">int</span> parent;</span><br><span class="line">&#125;node[MAX]</span><br></pre></td></tr></table></figure><h4 id="Use-arrays-of-the-same-size"><a href="#Use-arrays-of-the-same-size" class="headerlink" title="Use arrays of the same size"></a>Use arrays of the same size</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> <span class="built_in">set</span>[max]; <span class="comment">// the representative element of a subset where the certain element in</span></span><br><span class="line"><span class="keyword">int</span> rank[max];</span><br><span class="line"><span class="keyword">int</span> data[max];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">makeSet</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;</span><br><span class="line">    <span class="built_in">set</span>[I]=i;</span><br><span class="line">    rank[i]=<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="Find-Function"><a href="#Find-Function" class="headerlink" title="Find Function"></a>Find Function</h3><hr><h4 id="struct-or-class"><a href="#struct-or-class" class="headerlink" title="struct or class"></a>struct or class</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// find the representative element of a subset recursively</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">    <span class="comment">// if a node&#x27;s parent is itself, then it is the representative element</span></span><br><span class="line">    <span class="keyword">if</span>(node[x].parent==x)</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    <span class="comment">// else recursively find its parent</span></span><br><span class="line">    <span class="keyword">return</span> find(node[x].parent)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="array"><a href="#array" class="headerlink" title="array"></a>array</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;</span><br><span class="line">    <span class="comment">// if a node&#x27;s parent is itself, then it is the representative element</span></span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">set</span>[i]==i)</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">set</span>[i];</span><br><span class="line">    <span class="comment">// else recursively find its parent</span></span><br><span class="line">    <span class="keyword">return</span> find(<span class="built_in">set</span>[i])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="Union"><a href="#Union" class="headerlink" title="Union"></a>Union</h3><hr><h4 id="struct-or-class-1"><a href="#struct-or-class-1" class="headerlink" title="struct or class"></a>struct or class</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">union</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">    a=find(a);</span><br><span class="line">    b=find(b);</span><br><span class="line">    <span class="keyword">if</span>(node[a].rank&gt;node[b].rank)</span><br><span class="line">        node[b].parent=a;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        node[a].parent=b;</span><br><span class="line">        <span class="keyword">if</span>(node[a].rank==node[b].rank)</span><br><span class="line">            node[b].rank++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="array-1"><a href="#array-1" class="headerlink" title="array"></a>array</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">union</span><span class="params">(<span class="keyword">int</span> I, <span class="keyword">int</span> j)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    I=find(I);</span><br><span class="line">    j=find(j);</span><br><span class="line">    <span class="keyword">if</span>(i==j) <span class="keyword">return</span> ;</span><br><span class="line">    <span class="keyword">if</span>(rank[i]&gt;rank[j]) <span class="built_in">set</span>[j]=i;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(rank[i]==rank[j]) rank[j]++;</span><br><span class="line">        <span class="built_in">set</span>[i]=j;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="Related-Problems"><a href="#Related-Problems" class="headerlink" title="Related Problems"></a>Related Problems</h2><ol><li>Compute the number of disjoint subsets -&gt; count the number of nodes whose parent is itself, i.e. parent[i]==i</li><li><a href="https://leetcode-cn.com/problems/satisfiability-of-equality-equations/">Leetcode 990 - Satisfiability of Equality Equations</a></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Definition&quot;&gt;&lt;a href=&quot;#Definition&quot; class=&quot;headerlink&quot; title=&quot;Definition&quot;&gt;&lt;/a&gt;Definition&lt;/h2&gt;&lt;hr&gt;
+&lt;p&gt;A disjoint-set data structure (al</summary>
+      
+    
+    
+    
+    <category term="Data Structure" scheme="http://qingshuixifan.github.io/categories/Data-Structure/"/>
+    
+    
+    <category term="Data Structure" scheme="http://qingshuixifan.github.io/tags/Data-Structure/"/>
+    
+    <category term="Union-find" scheme="http://qingshuixifan.github.io/tags/Union-find/"/>
+    
+    <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【Markdown】Typora导出pdf分页的两种方法</title>
     <link href="http://qingshuixifan.github.io/2020/11/11/%E3%80%90Markdown%E3%80%91Typora%E5%AF%BC%E5%87%BApdf%E5%88%86%E9%A1%B5/"/>
     <id>http://qingshuixifan.github.io/2020/11/11/%E3%80%90Markdown%E3%80%91Typora%E5%AF%BC%E5%87%BApdf%E5%88%86%E9%A1%B5/</id>
     <published>2020-11-11T13:54:36.767Z</published>
-    <updated>2020-11-12T02:54:12.400Z</updated>
+    <updated>2020-11-12T07:44:06.693Z</updated>
     
     <content type="html"><![CDATA[<h2 id="自动分页符"><a href="#自动分页符" class="headerlink" title="自动分页符"></a>自动分页符</h2><p>有时您可能需要导出为PDF，并在顶层标题上使用分页符。 打开主题文件夹，然后编辑要包含的主题的css</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> print &#123;</span><br><span class="line">  <span class="selector-tag">h1</span> &#123;</span><br><span class="line">    <span class="attribute">page-break-before</span>: always;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">h1</span><span class="selector-pseudo">:first-of-type</span> &#123;</span><br><span class="line">    <span class="attribute">page-break-before</span>: avoid;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>现在，在导出时，将在每个h1元素（第一个元素除外）之前创建一个新页面。</p><h2 id="强制分页符（方便）"><a href="#强制分页符（方便）" class="headerlink" title="强制分页符（方便）"></a>强制分页符（方便）</h2><p>要在文档上插入分页<code>&lt;div style=&quot;page-break-after: always;&quot;&gt;&lt;/div&gt;</code>符，可以在书写时尝试输入HTML 。</p>]]></content>
     
@@ -63,9 +120,9 @@
     <category term="IT" scheme="http://qingshuixifan.github.io/categories/IT/"/>
     
     
-    <category term="Git" scheme="http://qingshuixifan.github.io/tags/Git/"/>
-    
     <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
+    
+    <category term="Git" scheme="http://qingshuixifan.github.io/tags/Git/"/>
     
   </entry>
   
