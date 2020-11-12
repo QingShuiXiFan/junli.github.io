@@ -3,11 +3,11 @@
   <title>Jun Li&#39;s Blog</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://qingshuixifan.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2020-11-11T09:41:37.702Z</updated>
-  <id>http://example.com/</id>
+  <link href="http://qingshuixifan.github.io/"/>
+  <updated>2020-11-12T02:54:12.400Z</updated>
+  <id>http://qingshuixifan.github.io/</id>
   
   <author>
     <name>Jun Li</name>
@@ -17,24 +17,55 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>【Markdown】Typora导出pdf分页的两种方法</title>
+    <link href="http://qingshuixifan.github.io/2020/11/11/%E3%80%90Markdown%E3%80%91Typora%E5%AF%BC%E5%87%BApdf%E5%88%86%E9%A1%B5/"/>
+    <id>http://qingshuixifan.github.io/2020/11/11/%E3%80%90Markdown%E3%80%91Typora%E5%AF%BC%E5%87%BApdf%E5%88%86%E9%A1%B5/</id>
+    <published>2020-11-11T13:54:36.767Z</published>
+    <updated>2020-11-12T02:54:12.400Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="自动分页符"><a href="#自动分页符" class="headerlink" title="自动分页符"></a>自动分页符</h2><p>有时您可能需要导出为PDF，并在顶层标题上使用分页符。 打开主题文件夹，然后编辑要包含的主题的css</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> print &#123;</span><br><span class="line">  <span class="selector-tag">h1</span> &#123;</span><br><span class="line">    <span class="attribute">page-break-before</span>: always;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">h1</span><span class="selector-pseudo">:first-of-type</span> &#123;</span><br><span class="line">    <span class="attribute">page-break-before</span>: avoid;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>现在，在导出时，将在每个h1元素（第一个元素除外）之前创建一个新页面。</p><h2 id="强制分页符（方便）"><a href="#强制分页符（方便）" class="headerlink" title="强制分页符（方便）"></a>强制分页符（方便）</h2><p>要在文档上插入分页<code>&lt;div style=&quot;page-break-after: always;&quot;&gt;&lt;/div&gt;</code>符，可以在书写时尝试输入HTML 。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;自动分页符&quot;&gt;&lt;a href=&quot;#自动分页符&quot; class=&quot;headerlink&quot; title=&quot;自动分页符&quot;&gt;&lt;/a&gt;自动分页符&lt;/h2&gt;&lt;p&gt;有时您可能需要导出为PDF，并在顶层标题上使用分页符。 打开主题文件夹，然后编辑要包含的主题的css&lt;/p&gt;
+&lt;fi</summary>
+      
+    
+    
+    
+    <category term="IT" scheme="http://qingshuixifan.github.io/categories/IT/"/>
+    
+    
+    <category term="Markdown" scheme="http://qingshuixifan.github.io/tags/Markdown/"/>
+    
+    <category term="CN" scheme="http://qingshuixifan.github.io/tags/CN/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【Git】How to clone from GitHub faster in China</title>
-    <link href="http://example.com/2020/11/11/%E3%80%90Git%E3%80%91How%20to%20clone%20from%20GitHub%20faster%20in%20China/"/>
-    <id>http://example.com/2020/11/11/%E3%80%90Git%E3%80%91How%20to%20clone%20from%20GitHub%20faster%20in%20China/</id>
+    <link href="http://qingshuixifan.github.io/2020/11/11/%E3%80%90Git%E3%80%91How%20to%20clone%20from%20GitHub%20faster%20in%20China/"/>
+    <id>http://qingshuixifan.github.io/2020/11/11/%E3%80%90Git%E3%80%91How%20to%20clone%20from%20GitHub%20faster%20in%20China/</id>
     <published>2020-11-11T09:38:33.247Z</published>
-    <updated>2020-11-11T09:41:37.702Z</updated>
+    <updated>2020-11-12T02:54:28.382Z</updated>
     
-    <content type="html"><![CDATA[<p>Steps:</p><ol><li><p>Just replace <code>www.github.com</code> with <code>www.github.com.cnpmjs.org</code>, like the following example:</p> <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com.cnpmjs.org/QingShuiXiFan/mysite.git</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    <content type="html"><![CDATA[<p>Sometimes it’s bloody slow to clone a repository from GitHub in China mainland, so follow the following way to clone the repos from GitHub Chinese mirror site:</p><p>Steps:</p><ol><li><p>Just replace <code>www.github.com</code> with <code>www.github.com.cnpmjs.org</code>, like the following example:</p> <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com.cnpmjs.org/QingShuiXiFan/mysite.git</span><br></pre></td></tr></table></figure></li></ol>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Steps:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Just replace &lt;code&gt;www.github.com&lt;/code&gt; with &lt;code&gt;www.github.com.cnpmjs.org&lt;/code&gt;, like the following example:&lt;</summary>
+    <summary type="html">&lt;p&gt;Sometimes it’s bloody slow to clone a repository from GitHub in China mainland, so follow the following way to clone the repos from GitHu</summary>
       
     
     
     
+    <category term="IT" scheme="http://qingshuixifan.github.io/categories/IT/"/>
+    
+    
+    <category term="Git" scheme="http://qingshuixifan.github.io/tags/Git/"/>
+    
+    <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
     
   </entry>
   
