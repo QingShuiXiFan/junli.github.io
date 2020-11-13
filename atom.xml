@@ -6,7 +6,7 @@
   <link href="http://qingshuixifan.github.io/atom.xml" rel="self"/>
   
   <link href="http://qingshuixifan.github.io/"/>
-  <updated>2020-11-12T08:23:02.978Z</updated>
+  <updated>2020-11-13T10:13:47.432Z</updated>
   <id>http://qingshuixifan.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【Algorithm】Binary Search</title>
+    <link href="http://qingshuixifan.github.io/2020/11/13/%E3%80%90Algorithm%E3%80%91Binary%20Search/"/>
+    <id>http://qingshuixifan.github.io/2020/11/13/%E3%80%90Algorithm%E3%80%91Binary%20Search/</id>
+    <published>2020-11-13T10:09:28.961Z</published>
+    <updated>2020-11-13T10:13:47.432Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Applicable-Scenarios"><a href="#Applicable-Scenarios" class="headerlink" title="Applicable Scenarios"></a>Applicable Scenarios</h2><ul><li>Search a certain number in a ** sorted ** array, under some condition.</li></ul><h2 id="Code-Snippets"><a href="#Code-Snippets" class="headerlink" title="Code Snippets"></a>Code Snippets</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Recursive</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bsearch</span>(<span class="params">nums: <span class="built_in">list</span>, low: <span class="built_in">int</span>, high: <span class="built_in">int</span>, value</span>) -&gt; int:</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    在数组nums的下标low和high之间，查找value，返回下标</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">if</span> low &gt; high:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span></span><br><span class="line">    middle = low + (high - low) &gt;&gt; <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> nums[middle] == value:  <span class="comment"># 找到了</span></span><br><span class="line">        <span class="keyword">return</span> middle</span><br><span class="line">    <span class="keyword">elif</span> nums[middle] &gt; value:</span><br><span class="line">        <span class="keyword">return</span> bsearch(nums, low, middle<span class="number">-1</span>, value)  <span class="comment"># high = middle-1</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> bsearch(nums, middle+<span class="number">1</span>, high, value)  <span class="comment"># low = middle+1</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Iterative</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bsearch</span>(<span class="params">nums: List[<span class="built_in">int</span>], target: <span class="built_in">int</span></span>) -&gt; int:</span></span><br><span class="line">    left= <span class="number">0</span></span><br><span class="line">    right=<span class="built_in">len</span>(nums) - <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> left &lt;= right: <span class="comment"># 区间没有变成1个元素，就查找</span></span><br><span class="line">        middle =  left + ((right-left) &gt;&gt; <span class="number">1</span>)  <span class="comment"># 计算中间下标</span></span><br><span class="line">        <span class="keyword">if</span> nums[middle] == target:  <span class="comment"># 找到了</span></span><br><span class="line">            <span class="keyword">return</span> middle</span><br><span class="line">        <span class="keyword">elif</span> nums[middle] &lt; target:  <span class="comment"># 中间下标比查找的值小，继续在右边查找</span></span><br><span class="line">            left = middle + <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:  <span class="comment"># 中间下标比查找的值大，继续在左边查找</span></span><br><span class="line">            right = middle - <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Applicable-Scenarios&quot;&gt;&lt;a href=&quot;#Applicable-Scenarios&quot; class=&quot;headerlink&quot; title=&quot;Applicable Scenarios&quot;&gt;&lt;/a&gt;Applicable Scenarios&lt;/h2&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="Algorithm" scheme="http://qingshuixifan.github.io/categories/Algorithm/"/>
+    
+    
+    <category term="Algorithm" scheme="http://qingshuixifan.github.io/tags/Algorithm/"/>
+    
+    <category term="Binary Search" scheme="http://qingshuixifan.github.io/tags/Binary-Search/"/>
+    
+    <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
+    
+  </entry>
   
   <entry>
     <title>【Git】Git Cheatsheet</title>
@@ -65,11 +93,11 @@
     <category term="Data Structure" scheme="http://qingshuixifan.github.io/categories/Data-Structure/"/>
     
     
+    <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
+    
     <category term="Data Structure" scheme="http://qingshuixifan.github.io/tags/Data-Structure/"/>
     
     <category term="Union-find" scheme="http://qingshuixifan.github.io/tags/Union-find/"/>
-    
-    <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
     
   </entry>
   

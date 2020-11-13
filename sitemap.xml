@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://qingshuixifan.github.io/2020/11/13/%E3%80%90Algorithm%E3%80%91Binary%20Search/</loc>
+    
+    <lastmod>2020-11-13</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://qingshuixifan.github.io/2020/11/12/%E3%80%90Git%E3%80%91Git%20Cheatsheet/</loc>
     
     <lastmod>2020-11-12</lastmod>
@@ -81,50 +88,64 @@
 
   <url>
     <loc>http://qingshuixifan.github.io/</loc>
-    <lastmod>2020-11-12</lastmod>
+    <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://qingshuixifan.github.io/tags/Data-Structure/</loc>
-    <lastmod>2020-11-12</lastmod>
+    <loc>http://qingshuixifan.github.io/tags/Algorithm/</loc>
+    <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://qingshuixifan.github.io/tags/Union-find/</loc>
-    <lastmod>2020-11-12</lastmod>
+    <loc>http://qingshuixifan.github.io/tags/Binary-Search/</loc>
+    <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://qingshuixifan.github.io/tags/EN/</loc>
-    <lastmod>2020-11-12</lastmod>
+    <lastmod>2020-11-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://qingshuixifan.github.io/tags/Data-Structure/</loc>
+    <lastmod>2020-11-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://qingshuixifan.github.io/tags/Union-find/</loc>
+    <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://qingshuixifan.github.io/tags/Git/</loc>
-    <lastmod>2020-11-12</lastmod>
+    <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://qingshuixifan.github.io/tags/Markdown/</loc>
-    <lastmod>2020-11-12</lastmod>
+    <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://qingshuixifan.github.io/tags/CN/</loc>
-    <lastmod>2020-11-12</lastmod>
+    <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -132,15 +153,22 @@
 
   
   <url>
+    <loc>http://qingshuixifan.github.io/categories/Algorithm/</loc>
+    <lastmod>2020-11-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://qingshuixifan.github.io/categories/Data-Structure/</loc>
-    <lastmod>2020-11-12</lastmod>
+    <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://qingshuixifan.github.io/categories/IT/</loc>
-    <lastmod>2020-11-12</lastmod>
+    <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
