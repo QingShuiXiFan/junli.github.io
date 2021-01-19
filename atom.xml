@@ -6,7 +6,7 @@
   <link href="http://qingshuixifan.github.io/atom.xml" rel="self"/>
   
   <link href="http://qingshuixifan.github.io/"/>
-  <updated>2020-11-13T10:13:47.432Z</updated>
+  <updated>2021-01-19T06:20:31.004Z</updated>
   <id>http://qingshuixifan.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【Games】Oxygen Not Included（缺氧）（持续更新中）</title>
+    <link href="http://qingshuixifan.github.io/2021/01/19/%E3%80%90Games%E3%80%91Oxygen%20Not%20Included%EF%BC%88%E7%BC%BA%E6%B0%A7%EF%BC%89/"/>
+    <id>http://qingshuixifan.github.io/2021/01/19/%E3%80%90Games%E3%80%91Oxygen%20Not%20Included%EF%BC%88%E7%BC%BA%E6%B0%A7%EF%BC%89/</id>
+    <published>2021-01-19T03:57:28.518Z</published>
+    <updated>2021-01-19T06:20:31.004Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ww1.sinaimg.cn/large/006qvw0Wgy1gmsw6flf5oj30cs05zjse.jpg" alt="header"></p><h2 id="游戏简介"><a href="#游戏简介" class="headerlink" title="游戏简介"></a>游戏简介</h2><p>《<strong>缺氧</strong>》（英语：<em>Oxygen Not Included</em>）是一款透过<a href="https://zh.wikipedia.org/wiki/Steam">Steam</a>网络平台发行由Klei Entertainment制作的太空<a href="https://zh.wikipedia.org/wiki/%E6%A8%A1%E6%93%AC%E9%81%8A%E6%88%B2">模拟策略</a>游戏，采用2D横版布局，玩家需要管理复制人，让他们挖掘、建立并维护起一个地下的基地，为此，玩家需要水、食物、氧气、适当的调节压力和适宜的温度等条件来维持复制人生存并满足他们的其他需求。^[1]^</p><p>游戏于2017年5月18日登陆Steam，中国区售价58元。2019年7月30日完成最后更新，一般使用者可以随时购买。^[1]^</p><h2 id="新手攻略"><a href="#新手攻略" class="headerlink" title="新手攻略"></a>新手攻略</h2><h3 id="水管优先级策略"><a href="#水管优先级策略" class="headerlink" title="水管优先级策略"></a>水管优先级策略</h3><blockquote><p>白口串联，灌满再走；<br>绿口串联，空了再走；<br>优先供水用绿口，绿口优先；<br>优先取水用白口，白口滞后。</p></blockquote><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol><li><a href="https://zh.wikipedia.org/wiki/%E7%BC%BA%E6%B0%A7_(%E9%81%8A%E6%88%B2)">Wikipedia - 缺氧 (游戏)</a></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006qvw0Wgy1gmsw6flf5oj30cs05zjse.jpg&quot; alt=&quot;header&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;游戏简介&quot;&gt;&lt;a href=&quot;#游戏简介&quot; class=&quot;header</summary>
+      
+    
+    
+    
+    <category term="Games" scheme="http://qingshuixifan.github.io/categories/Games/"/>
+    
+    
+    <category term="CN" scheme="http://qingshuixifan.github.io/tags/CN/"/>
+    
+    <category term="klei" scheme="http://qingshuixifan.github.io/tags/klei/"/>
+    
+    <category term="Survival" scheme="http://qingshuixifan.github.io/tags/Survival/"/>
+    
+    <category term="Automation" scheme="http://qingshuixifan.github.io/tags/Automation/"/>
+    
+  </entry>
   
   <entry>
     <title>【Algorithm】Binary Search</title>
