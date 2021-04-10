@@ -1,10 +1,5 @@
 <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 	<%- partial('_common/social', null, {cache: !config.relative_link}) %>
-    <% if (theme.pv.busuanzi.enable) { %>
-        <!-- 不蒜子统计 -->
-        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-        <span id="busuanzi_container_site_pv">This site has been visited <span id="busuanzi_value_site_pv"></span> times </span>
-    <% } %>
     <div class="copyright">
     	<% if(theme.site.copyright) { %>
         &copy; Copyright <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
