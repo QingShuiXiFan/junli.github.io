@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jun Li&#39;s Blog</title>
+  
+  
+  <link href="http://qingshuixifan.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://qingshuixifan.github.io/"/>
+  <updated>2021-02-28T05:27:16.042Z</updated>
+  <id>http://qingshuixifan.github.io/</id>
+  
+  <author>
+    <name>Jun Li</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【Markdown】Typora导出pdf分页的两种方法</title>
+    <link href="http://qingshuixifan.github.io/2021/02/28/%E3%80%90Markdown%E3%80%91Typora%E5%AF%BC%E5%87%BApdf%E5%88%86%E9%A1%B5/"/>
+    <id>http://qingshuixifan.github.io/2021/02/28/%E3%80%90Markdown%E3%80%91Typora%E5%AF%BC%E5%87%BApdf%E5%88%86%E9%A1%B5/</id>
+    <published>2021-02-28T05:27:16.042Z</published>
+    <updated>2021-02-28T05:27:16.042Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="自动分页符"><a href="#自动分页符" class="headerlink" title="自动分页符"></a>自动分页符</h2><p>有时您可能需要导出为PDF，并在顶层标题上使用分页符。 打开主题文件夹，然后编辑要包含的主题的css</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> print &#123;</span><br><span class="line">  <span class="selector-tag">h1</span> &#123;</span><br><span class="line">    <span class="attribute">page-break-before</span>: always;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">h1</span><span class="selector-pseudo">:first-of-type</span> &#123;</span><br><span class="line">    <span class="attribute">page-break-before</span>: avoid;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>现在，在导出时，将在每个h1元素（第一个元素除外）之前创建一个新页面。</p><h2 id="强制分页符（方便）"><a href="#强制分页符（方便）" class="headerlink" title="强制分页符（方便）"></a>强制分页符（方便）</h2><p>要在文档上插入分页<code>&lt;div style=&quot;page-break-after: always;&quot;&gt;&lt;/div&gt;</code>符，可以在书写时尝试输入HTML 。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;自动分页符&quot;&gt;&lt;a href=&quot;#自动分页符&quot; class=&quot;headerlink&quot; title=&quot;自动分页符&quot;&gt;&lt;/a&gt;自动分页符&lt;/h2&gt;&lt;p&gt;有时您可能需要导出为PDF，并在顶层标题上使用分页符。 打开主题文件夹，然后编辑要包含的主题的css&lt;/p&gt;
+&lt;fi</summary>
+      
+    
+    
+    
+    <category term="IT" scheme="http://qingshuixifan.github.io/categories/IT/"/>
+    
+    
+    <category term="CN" scheme="http://qingshuixifan.github.io/tags/CN/"/>
+    
+    <category term="Markdown" scheme="http://qingshuixifan.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Git】How to clone from GitHub faster in China</title>
+    <link href="http://qingshuixifan.github.io/2021/02/28/%E3%80%90Git%E3%80%91How%20to%20clone%20from%20GitHub%20faster%20in%20China/"/>
+    <id>http://qingshuixifan.github.io/2021/02/28/%E3%80%90Git%E3%80%91How%20to%20clone%20from%20GitHub%20faster%20in%20China/</id>
+    <published>2021-02-28T05:27:16.042Z</published>
+    <updated>2021-02-28T05:27:16.042Z</updated>
+    
+    <content type="html"><![CDATA[<p>Sometimes it’s bloody slow to clone a repository from GitHub in China mainland, so follow the following way to clone the repos from GitHub Chinese mirror site:</p><p>Steps:</p><ol><li><p>Just replace <code>www.github.com</code> with <code>www.github.com.cnpmjs.org</code>, like the following example:</p> <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com.cnpmjs.org/QingShuiXiFan/mysite.git</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Sometimes it’s bloody slow to clone a repository from GitHub in China mainland, so follow the following way to clone the repos from GitHu</summary>
+      
+    
+    
+    
+    <category term="IT" scheme="http://qingshuixifan.github.io/categories/IT/"/>
+    
+    
+    <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
+    
+    <category term="Git" scheme="http://qingshuixifan.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Books】C++ Primer Plus 电子版PDF带书签</title>
+    <link href="http://qingshuixifan.github.io/2021/02/28/%E3%80%90Books%E3%80%91C++%20Primer%20Plus%20pdf%E4%B8%8B%E8%BD%BD/"/>
+    <id>http://qingshuixifan.github.io/2021/02/28/%E3%80%90Books%E3%80%91C++%20Primer%20Plus%20pdf%E4%B8%8B%E8%BD%BD/</id>
+    <published>2021-02-28T05:27:16.041Z</published>
+    <updated>2021-02-28T05:27:16.041Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><p>中文版：</p><p>下载链接: <a href="https://pan.baidu.com/s/1tTq90XRRKXmDddyoYpuEgA">https://pan.baidu.com/s/1tTq90XRRKXmDddyoYpuEgA</a> 提取码: 1pz4 </p></li><li><p>英文版：</p><p>下载链接：链接: <a href="https://pan.baidu.com/s/1VtKcQvYh9YLnUbXr-17FSw">https://pan.baidu.com/s/1VtKcQvYh9YLnUbXr-17FSw</a> 提取码: 3fku</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;中文版：&lt;/p&gt;
+&lt;p&gt;下载链接: &lt;a href=&quot;https://pan.baidu.com/s/1tTq90XRRKXmDddyoYpuEgA&quot;&gt;https://pan.baidu.com/s/1tTq90XRRKXmDddyoYpuEgA&lt;/a&gt; </summary>
+      
+    
+    
+    
+    <category term="Books" scheme="http://qingshuixifan.github.io/categories/Books/"/>
+    
+    
+    <category term="C++" scheme="http://qingshuixifan.github.io/tags/C/"/>
+    
+    <category term="CN" scheme="http://qingshuixifan.github.io/tags/CN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Data Structure】Union-find data structure</title>
+    <link href="http://qingshuixifan.github.io/2021/02/28/%E3%80%90Data%20Structure%E3%80%91Union-find%20data%20structure/"/>
+    <id>http://qingshuixifan.github.io/2021/02/28/%E3%80%90Data%20Structure%E3%80%91Union-find%20data%20structure/</id>
+    <published>2021-02-28T05:27:16.041Z</published>
+    <updated>2021-02-28T05:27:16.041Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h2><hr><p>A disjoint-set data structure (also called union-find data structure) is a data structure that tracks a set of elements partitioned into a number of disjoint (overlapping) subsets.</p><h2 id="Operations"><a href="#Operations" class="headerlink" title="Operations"></a>Operations</h2><hr><ul><li><strong>Union</strong>: Add new sets/merge existing sets</li><li><strong>Find</strong>: Determine whether elements are in the same set</li></ul><h2 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h2><hr><ul><li>The <code>representative element</code> (one without a parent, or whose parent is itself) is used to represent a subset</li><li>All the elements in a subset compose a tree structure whose root is <code>representative element</code></li><li>if an element has a parent, the element is part of whatever set is identified by following the chain of parents upwards until a <code>representative element </code> is reached at the root of the tree</li><li>If the <code>representative element</code> of the two elements is the same, then they belong to the same subset</li></ul><h2 id="Code-Snippets"><a href="#Code-Snippets" class="headerlink" title="Code Snippets"></a>Code Snippets</h2><hr><h3 id="Initialization"><a href="#Initialization" class="headerlink" title="Initialization"></a>Initialization</h3><hr><h4 id="Use-a-struct-or-class"><a href="#Use-a-struct-or-class" class="headerlink" title="Use a struct or class"></a>Use a struct or class</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX 10000</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Node</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> data;</span><br><span class="line">    <span class="keyword">int</span> rank;</span><br><span class="line">    <span class="keyword">int</span> parent;</span><br><span class="line">&#125;node[MAX]</span><br></pre></td></tr></table></figure><h4 id="Use-arrays-of-the-same-size"><a href="#Use-arrays-of-the-same-size" class="headerlink" title="Use arrays of the same size"></a>Use arrays of the same size</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> <span class="built_in">set</span>[max]; <span class="comment">// the representative element of a subset where the certain element in</span></span><br><span class="line"><span class="keyword">int</span> rank[max];</span><br><span class="line"><span class="keyword">int</span> data[max];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">makeSet</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;</span><br><span class="line">    <span class="built_in">set</span>[I]=i;</span><br><span class="line">    rank[i]=<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="Find-Function"><a href="#Find-Function" class="headerlink" title="Find Function"></a>Find Function</h3><hr><h4 id="struct-or-class"><a href="#struct-or-class" class="headerlink" title="struct or class"></a>struct or class</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// find the representative element of a subset recursively</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">    <span class="comment">// if a node&#x27;s parent is itself, then it is the representative element</span></span><br><span class="line">    <span class="keyword">if</span>(node[x].parent==x)</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    <span class="comment">// else recursively find its parent</span></span><br><span class="line">    <span class="keyword">return</span> find(node[x].parent)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="array"><a href="#array" class="headerlink" title="array"></a>array</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;</span><br><span class="line">    <span class="comment">// if a node&#x27;s parent is itself, then it is the representative element</span></span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">set</span>[i]==i)</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">set</span>[i];</span><br><span class="line">    <span class="comment">// else recursively find its parent</span></span><br><span class="line">    <span class="keyword">return</span> find(<span class="built_in">set</span>[i])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="Union"><a href="#Union" class="headerlink" title="Union"></a>Union</h3><hr><h4 id="struct-or-class-1"><a href="#struct-or-class-1" class="headerlink" title="struct or class"></a>struct or class</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">union</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">    a=find(a);</span><br><span class="line">    b=find(b);</span><br><span class="line">    <span class="keyword">if</span>(node[a].rank&gt;node[b].rank)</span><br><span class="line">        node[b].parent=a;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        node[a].parent=b;</span><br><span class="line">        <span class="keyword">if</span>(node[a].rank==node[b].rank)</span><br><span class="line">            node[b].rank++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="array-1"><a href="#array-1" class="headerlink" title="array"></a>array</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">union</span><span class="params">(<span class="keyword">int</span> I, <span class="keyword">int</span> j)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    I=find(I);</span><br><span class="line">    j=find(j);</span><br><span class="line">    <span class="keyword">if</span>(i==j) <span class="keyword">return</span> ;</span><br><span class="line">    <span class="keyword">if</span>(rank[i]&gt;rank[j]) <span class="built_in">set</span>[j]=i;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(rank[i]==rank[j]) rank[j]++;</span><br><span class="line">        <span class="built_in">set</span>[i]=j;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="Related-Problems"><a href="#Related-Problems" class="headerlink" title="Related Problems"></a>Related Problems</h2><ol><li>Compute the number of disjoint subsets -&gt; count the number of nodes whose parent is itself, i.e. parent[i]==i</li><li><a href="https://leetcode-cn.com/problems/satisfiability-of-equality-equations/">Leetcode 990 - Satisfiability of Equality Equations</a></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Definition&quot;&gt;&lt;a href=&quot;#Definition&quot; class=&quot;headerlink&quot; title=&quot;Definition&quot;&gt;&lt;/a&gt;Definition&lt;/h2&gt;&lt;hr&gt;
+&lt;p&gt;A disjoint-set data structure (al</summary>
+      
+    
+    
+    
+    <category term="Data Structure" scheme="http://qingshuixifan.github.io/categories/Data-Structure/"/>
+    
+    
+    <category term="Data Structure" scheme="http://qingshuixifan.github.io/tags/Data-Structure/"/>
+    
+    <category term="Union-find" scheme="http://qingshuixifan.github.io/tags/Union-find/"/>
+    
+    <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Algorithm】Binary Search</title>
+    <link href="http://qingshuixifan.github.io/2021/02/28/%E3%80%90Algorithm%E3%80%91Binary%20Search/"/>
+    <id>http://qingshuixifan.github.io/2021/02/28/%E3%80%90Algorithm%E3%80%91Binary%20Search/</id>
+    <published>2021-02-28T05:27:16.041Z</published>
+    <updated>2021-02-28T05:27:16.041Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Applicable-Scenarios"><a href="#Applicable-Scenarios" class="headerlink" title="Applicable Scenarios"></a>Applicable Scenarios</h2><ul><li>Search a certain number in a ** sorted ** array, under some condition.</li></ul><h2 id="Code-Snippets"><a href="#Code-Snippets" class="headerlink" title="Code Snippets"></a>Code Snippets</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Recursive</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bsearch</span>(<span class="params">nums: <span class="built_in">list</span>, low: <span class="built_in">int</span>, high: <span class="built_in">int</span>, value</span>) -&gt; int:</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    在数组nums的下标low和high之间，查找value，返回下标</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">if</span> low &gt; high:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span></span><br><span class="line">    middle = low + (high - low) &gt;&gt; <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> nums[middle] == value:  <span class="comment"># 找到了</span></span><br><span class="line">        <span class="keyword">return</span> middle</span><br><span class="line">    <span class="keyword">elif</span> nums[middle] &gt; value:</span><br><span class="line">        <span class="keyword">return</span> bsearch(nums, low, middle<span class="number">-1</span>, value)  <span class="comment"># high = middle-1</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> bsearch(nums, middle+<span class="number">1</span>, high, value)  <span class="comment"># low = middle+1</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Iterative</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bsearch</span>(<span class="params">nums: List[<span class="built_in">int</span>], target: <span class="built_in">int</span></span>) -&gt; int:</span></span><br><span class="line">    left= <span class="number">0</span></span><br><span class="line">    right=<span class="built_in">len</span>(nums) - <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> left &lt;= right: <span class="comment"># 区间没有变成1个元素，就查找</span></span><br><span class="line">        middle =  left + ((right-left) &gt;&gt; <span class="number">1</span>)  <span class="comment"># 计算中间下标</span></span><br><span class="line">        <span class="keyword">if</span> nums[middle] == target:  <span class="comment"># 找到了</span></span><br><span class="line">            <span class="keyword">return</span> middle</span><br><span class="line">        <span class="keyword">elif</span> nums[middle] &lt; target:  <span class="comment"># 中间下标比查找的值小，继续在右边查找</span></span><br><span class="line">            left = middle + <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:  <span class="comment"># 中间下标比查找的值大，继续在左边查找</span></span><br><span class="line">            right = middle - <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Applicable-Scenarios&quot;&gt;&lt;a href=&quot;#Applicable-Scenarios&quot; class=&quot;headerlink&quot; title=&quot;Applicable Scenarios&quot;&gt;&lt;/a&gt;Applicable Scenarios&lt;/h2&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="Algorithm" scheme="http://qingshuixifan.github.io/categories/Algorithm/"/>
+    
+    
+    <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
+    
+    <category term="Algorithm" scheme="http://qingshuixifan.github.io/tags/Algorithm/"/>
+    
+    <category term="Binary Search" scheme="http://qingshuixifan.github.io/tags/Binary-Search/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Games】Oxygen Not Included（缺氧）（持续更新中）</title>
+    <link href="http://qingshuixifan.github.io/2021/02/28/%E3%80%90Games%E3%80%91Oxygen%20Not%20Included%EF%BC%88%E7%BC%BA%E6%B0%A7%EF%BC%89/"/>
+    <id>http://qingshuixifan.github.io/2021/02/28/%E3%80%90Games%E3%80%91Oxygen%20Not%20Included%EF%BC%88%E7%BC%BA%E6%B0%A7%EF%BC%89/</id>
+    <published>2021-02-28T05:27:16.041Z</published>
+    <updated>2021-02-28T05:27:16.041Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://s3.ax1x.com/2021/01/19/sgyz0P.jpg"><img src="https://s3.ax1x.com/2021/01/19/sgyz0P.jpg" alt="sgyz0P.jpg"></a></p><h2 id="游戏简介"><a href="#游戏简介" class="headerlink" title="游戏简介"></a>游戏简介</h2><p>《<strong>缺氧</strong>》（英语：<em>Oxygen Not Included</em>）是一款透过<a href="https://zh.wikipedia.org/wiki/Steam">Steam</a>网络平台发行由Klei Entertainment制作的太空<a href="https://zh.wikipedia.org/wiki/%E6%A8%A1%E6%93%AC%E9%81%8A%E6%88%B2">模拟策略</a>游戏，采用2D横版布局，玩家需要管理复制人，让他们挖掘、建立并维护起一个地下的基地，为此，玩家需要水、食物、氧气、适当的调节压力和适宜的温度等条件来维持复制人生存并满足他们的其他需求。<sup>[1]</sup></p><p>游戏于2017年5月18日登陆Steam，中国区售价58元。2019年7月30日完成最后更新，一般使用者可以随时购买。<sup>[1]</sup></p><h2 id="新手攻略"><a href="#新手攻略" class="headerlink" title="新手攻略"></a>新手攻略</h2><h3 id="水管优先级策略"><a href="#水管优先级策略" class="headerlink" title="水管优先级策略"></a>水管优先级策略</h3><blockquote><p>白口串联，灌满再走；<br>绿口串联，空了再走；<br>优先供水用绿口，绿口优先；<br>优先取水用白口，白口滞后。</p></blockquote><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol><li><a href="https://zh.wikipedia.org/wiki/%E7%BC%BA%E6%B0%A7_(%E9%81%8A%E6%88%B2)">Wikipedia - 缺氧 (游戏)</a></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://s3.ax1x.com/2021/01/19/sgyz0P.jpg&quot;&gt;&lt;img src=&quot;https://s3.ax1x.com/2021/01/19/sgyz0P.jpg&quot; alt=&quot;sgyz0P.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id</summary>
+      
+    
+    
+    
+    <category term="Games" scheme="http://qingshuixifan.github.io/categories/Games/"/>
+    
+    
+    <category term="CN" scheme="http://qingshuixifan.github.io/tags/CN/"/>
+    
+    <category term="klei" scheme="http://qingshuixifan.github.io/tags/klei/"/>
+    
+    <category term="Survival" scheme="http://qingshuixifan.github.io/tags/Survival/"/>
+    
+    <category term="Automation" scheme="http://qingshuixifan.github.io/tags/Automation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Games】Red Dead:Redemption——荒野大镖客2（持续更新中）</title>
+    <link href="http://qingshuixifan.github.io/2021/02/28/%E3%80%90Games%E3%80%91%E8%8D%92%E9%87%8E%E5%A4%A7%E9%95%96%E5%AE%A22/"/>
+    <id>http://qingshuixifan.github.io/2021/02/28/%E3%80%90Games%E3%80%91%E8%8D%92%E9%87%8E%E5%A4%A7%E9%95%96%E5%AE%A22/</id>
+    <published>2021-02-28T05:27:16.041Z</published>
+    <updated>2021-02-28T05:27:16.041Z</updated>
+    
+    <content type="html"><![CDATA[<center><img src="https://img.expreview.com/news/2019/10/10/rdr2_900.jpg"/></center><h2 id="游戏简介-1"><a href="#游戏简介-1" class="headerlink" title="游戏简介[1]"></a>游戏简介<sup>[1]</sup></h2><p>《<strong>荒野大镖客：救赎2</strong>》（英语：<em>Red Dead Redemption 2</em>，港台译作“<strong>碧血狂杀2</strong>”）是一部<a href="https://zh.wikipedia.org/wiki/%E4%BF%AE%E6%AD%A3%E4%B8%BB%E4%B9%89%E8%A5%BF%E9%83%A8%E7%89%87">修正主义西部片</a>风格的<a href="https://zh.wikipedia.org/wiki/%E5%8B%95%E4%BD%9C%E5%86%92%E9%9A%AA%E9%81%8A%E6%88%B2">动作冒险游戏</a>。此游戏由<a href="https://zh.wikipedia.org/wiki/Rockstar_Games">Rockstar Games</a>制作与发行，2018年10月26日于<a href="https://zh.wikipedia.org/wiki/PlayStation_4">PlayStation 4</a>和<a href="https://zh.wikipedia.org/wiki/Xbox_One">Xbox One</a>平台发布、2019年11月5日在<a href="https://zh.wikipedia.org/wiki/Microsoft_Windows">Microsoft Windows</a>平台发布、11月19日发布<a href="https://zh.wikipedia.org/wiki/Stadia">Stadia</a>版本。</p><p>本作是<a href="https://zh.wikipedia.org/wiki/%E7%A2%A7%E8%A1%80%E7%8B%82%E6%AE%BA%E7%B3%BB%E5%88%97">荒野大镖客系列</a>第三部作品，也是2010年游戏《<a href="https://zh.wikipedia.org/wiki/%E8%8D%92%E9%87%8E%E5%A4%A7%E9%95%96%E5%AE%A2%EF%BC%9A%E6%95%91%E8%B5%8E">荒野大镖客：救赎</a>》的<a href="https://zh.wikipedia.org/wiki/%E5%89%8D%E5%82%B3">前传</a>。游戏剧情设定在1899年虚构化的<a href="https://zh.wikipedia.org/wiki/%E7%BE%8E%E5%9C%8B%E8%A5%BF%E9%83%A8">美国西部</a>、中西部和南部，玩家扮演一名土匪帮派范特林帮（Van Der Linde）的成员亚瑟‧摩根（Arthur Morgan）。亚瑟必须面对<a href="https://zh.wikipedia.org/wiki/%E7%BE%8E%E5%9C%8B%E8%88%8A%E8%A5%BF%E9%83%A8">美国旧西部</a>时代慢慢终结的现实，并在政府力量与其他帮派等挑战下努力生存。剧情也跟随另一名帮派成员<a href="https://zh.wikipedia.org/w/index.php?title=John_Marston&action=edit&redlink=1">约翰·马斯顿</a>－前作《荒野大镖客：救赎》的主角。</p><p>游戏可以<a href="https://zh.wikipedia.org/wiki/%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0%E8%A7%86%E8%A7%92%E6%B8%B8%E6%88%8F">第一人称</a>和<a href="https://zh.wikipedia.org/wiki/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0%E8%A7%86%E8%A7%92%E6%B8%B8%E6%88%8F">第三人称视角</a>游玩。玩家可以自由探索<a href="https://zh.wikipedia.org/wiki/%E9%96%8B%E6%94%BE%E4%B8%96%E7%95%8C">开放世界</a>并与其互动。游戏内容包括枪战、狩猎、骑马、<a href="https://zh.wikipedia.org/wiki/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2">非玩家角色</a>任务等，并具有道德值系统。游戏设有一种“赏金”，会随着主角犯罪而逐渐增加。与《<a href="https://zh.wikipedia.org/wiki/%E4%BF%A0%E7%9B%9C%E7%8D%B5%E8%BB%8A%E6%89%8B%E7%B3%BB%E5%88%97">侠盗猎车手系列</a>》系列的追击星数相似的是，赏金会吸引警察和赏金猎人前来试图抓捕主角。游戏另有名为《<a href="https://zh.wikipedia.org/w/index.php?title=Red_Dead_Online&action=edit&redlink=1">Red Dead Online</a>》的在线多人游戏模式，于2018年底释出测试版，并于2019年5月正式上线。</p><p>《荒野大镖客：救赎2》发售前广受宣传与期待，所以发售后随即打破多项业界纪录。在发售的当个周末，《荒野        大镖客：救赎2》即售出超过2500万套，收益超过7.25亿美元。评论界对本作评价非常高，普遍赞扬其故事情节、角色设定、开放世界和精密细节。本作获得多个满分评价和奖项，包括2018年金摇杆奖和2018年游戏大奖的“最佳剧情”和“最佳音乐”项目。</p><h2 id="场所和NPC介绍"><a href="#场所和NPC介绍" class="headerlink" title="场所和NPC介绍"></a>场所和NPC介绍</h2><h3 id="帮派营地"><a href="#帮派营地" class="headerlink" title="帮派营地"></a>帮派营地</h3><p>帮派营地会根据游戏流程更换位置，分别是<strong>雪山犁刀村</strong>、<strong>马掌望台</strong>、<strong>罗兹西边烙铁湖边</strong>、<strong>圣丹尼南莱莫恩掠夺者的营地</strong>、<strong>格拉斯附近的藏身处</strong>、<strong>河狸岩洞窟</strong>。马展望台和烙铁湖边的营地还是挺不错的，风景优美，而且剧情也没那么虐心。建议玩家不要过快地推进剧情，先把支线任务都做了（比如给帮派成员找回物品、抢劫农庄等）。否则，在搬家后有些支线任务就没了，影响成就的达成。</p><h4 id="帮派营地的构成-3"><a href="#帮派营地的构成-3" class="headerlink" title="帮派营地的构成[3]"></a>帮派营地的构成<sup>[3]</sup></h4><p>营地总共有三驾补给马车，不同的马车能够补给不同的物资。通过在第二章中，接受施特劳斯的支线任务“放债于更多罪孽”后，完成一次任务后即可解锁账本。在账本中选择补充物资，即可依次解锁。</p><ul><li><p><strong>药品物资</strong>：施特劳斯的马车里存放着营地的医疗物资。可以从这里领取药品补给，升级后可以增加药品种类和数量。药品用完之后需要到账本上重新补充。</p></li><li><p><strong>补给品</strong>：皮尔逊的马车里存放着营地的食品物资。可以从这里领取食物补给，升级后可以增加补给种类和数量。补给用完后需要到账本上重新补充。</p></li><li><p><strong>弹药</strong>：亚瑟的住处存放着营地的弹药物资。可以从这里领取弹药补给，升级后可以增加弹药种类和数量。弹药用完后需要到账本上重新补充。</p></li><li><p><strong>食物</strong>：可以从这里免费获取炖汤和咖啡，炖汤可以恢复你的生命核心值，咖啡可以恢复你的死神之眼核心值。每天只能免费获取一次，会在每天下午12点刷新。</p></li><li><p><strong>肉铺</strong>：皮尔逊作为营地里的屠夫和皮革师傅，能够帮你处理任何捕获的猎物。你可以在这里捐献打猎获得的肉和皮毛来增加营地捐款，给皮尔森带来合适的素材来制作升级营地装饰和亚瑟的背包。</p></li><li><p><strong>小游戏</strong>：你可以跟营地里不同的NPC进行一系列小游戏，例如刀尖戳手指、多米诺骨牌和德州扑克。</p></li><li><p><strong>捐助营地</strong>：达奇放置供营地成员捐献公共基金的箱子。升级和补给营地设施的资金来源，可以自定义捐献的金额。（没必要捐太多，够升级营地和保证自己的食物药物弹药补给就行）</p></li><li><p><strong>亚瑟的帐篷</strong>：这里你可以让亚瑟睡觉，换衣服和刮胡子，也可以看着地图快速移动。(地图上的图标名称会根据营地位置的改变而改变)</p></li></ul><h4 id="如何升级营地-3"><a href="#如何升级营地-3" class="headerlink" title="如何升级营地[3]"></a>如何升级营地<sup>[3]</sup></h4><p>账本是你用来升级营地和主角设施的唯一途径，你可以通过账本来升级补给马车和添置新的营地设施（当然要先捐款给帮派公共基金箱）。购买特别版和终极版的玩家，升级设施和补充物品时有8折折扣。</p><h3 id="随机事件"><a href="#随机事件" class="headerlink" title="随机事件"></a>随机事件</h3><h4 id="乱伦兄妹"><a href="#乱伦兄妹" class="headerlink" title="乱伦兄妹"></a>乱伦兄妹</h4><p>以亚瑟(Arthur)的身份去阿伯丁养猪场，位置如下图。</p><center><img src="https://img.3dmgame.com/uploads/images/news/20181207/1544163350_442009.jpg"/></center><p>这里接受邀请则触发剧情，然后接受饮料(如果是第二次访问，则接受食物)，然后回到房子，杀死他们两个，钱会直接放在前门的“妈妈”画后面。</p><p><font color=red>这里建议不要找回钱，而是留给约翰以后拿，这是亚瑟把钱留给约翰的唯一方法</font></p><h2 id="狩猎"><a href="#狩猎" class="headerlink" title="狩猎"></a>狩猎</h2><p>打猎系统是大表哥2非常吸引人的特色，玩家可以通过<strong>死眼</strong>追踪动物的行迹，再用合适的方法猎杀。猎杀动物得到的物品也很有用——皮毛可以做<strong>背包、服饰、升级营地</strong>，动物肉可以烹饪<strong>食物</strong>或者捐给营地补给做<strong>肉汤</strong>，一些特殊动物部位也可以制作武器（比如飞羽做改良箭、脂肪做分裂子弹）。</p><p>其中，<strong>“东部传说”背包</strong>作为四次元空间物品，它使所有背包物品携带上限涨到99件，敛财必备，必须要各种完美皮毛才能制作。因此，非常建议在第四章前根据物品清单把各种完美皮毛打到手，把<strong>“东部传说”背包</strong>先拿到，在游戏中后期很有用。</p><p>一般来说，我们只需要完美品质的动物皮毛。所以在确定猎物之前，我们可以先看一看动物的品质（瞄准镜或望远镜观察），只挑三星的动物。没有必要大开杀戒，毕竟人与自然要和谐相处不是嘛😄。</p><blockquote><p><font color=red>建议首先打<strong>传说公鹿</strong>，传说公鹿角在黑市做的饰品可以提升皮毛品质，对需要完美皮毛的制作很有用。</font></p></blockquote><h3 id="武器选择"><a href="#武器选择" class="headerlink" title="武器选择"></a>武器选择</h3><p>除了霰弹枪外（会损伤皮毛品质），几乎所有武器都可以拿来打猎，这里是我推荐使用的武器：</p><ul><li><strong>中大型猎物</strong>：春田步枪/拉栓式步枪+高速弹，开死眼打头</li><li><strong>小型猎物</strong>：捕猎步枪，全身</li></ul><p>还有一个比较特殊的打猎方法，只针对中大型食草动物，也不会损伤皮毛：可以骑马拿绳子套猎物，套中后下马割喉+剥皮，这里建议开死眼套猎物，一抓一个准。</p><h3 id="狩猎传说动物-2"><a href="#狩猎传说动物-2" class="headerlink" title="狩猎传说动物[2]"></a>狩猎传说动物<sup>[2]</sup></h3><p>《荒野大镖客2》游戏中有16个传说动物，要达到100%完成度需要找到并杀死至少5只传说动物。奖杯“略懂皮毛”和“动物学家”也需要捕杀传说动物。下面为大家带来《荒野大镖客2》全传说动物分布图与具体位置，没找齐的朋友可以参考着去找。</p><p>传说动物可掉落传说毛皮，这些毛皮是独一无二的，可以在捕兽人处制作成特殊的服饰。如果你弄丢了传说毛皮，它将自动被运送到捕兽人处，所以这奖励是不会错过的。</p><p>无论你如何杀死传说动物，它们总是能掉落传说毛皮。因此，您可以使用死亡之眼模式轻松地用霰弹枪解决它们，而不会影响毛皮质量。</p><p>在第2章中，何西阿带你去狩猎传说熊。在进入任务之后，您可以选择退出或继续狩猎它。如果你选择退出，你仍然可以稍后返回来狩猎它。何西阿还为你提供了传说动物地图，但它不完整且不太准确。可以点击下方“相关链接”查询攻略。</p><h4 id="如何找到传说动物"><a href="#如何找到传说动物" class="headerlink" title="如何找到传说动物"></a>如何找到传说动物</h4><p>首先抵达地图上显示的传说动物位置。当你足够接近时，地图上会出现一个传说动物图标。它们看起来像动物的图画，但头上有一个“皇冠”图标。皇冠意味着它是传说级的。进入该区域后，它必须在左上角显示“你已经进入了传说动物领域。通过寻找和检查线索来追捕这只传说动物”，否则传说动物将不会出现：</p><p>现在你必须开死眼并在该区域周围寻找黄色的线索。它们位于动物出现区域内的随机位置，因此您可能需要稍微漫游一下该区域。</p><center><img src="https://s3.ax1x.com/2021/02/09/yaTN1f.jpg"/></center><p>通常会有3组黄色线索供调查，然后跟踪动物的踪迹。</p><blockquote><p>相关链接</p><ul><li><p>传说动物位置：<a href="https://www.gamersky.com/handbook/201810/1118265_2.shtml">《荒野大镖客2》全传说动物分布图与具体位置</a></p></li><li><p>很好用的互动地图，做全收集任务很有用：<a href="https://www.gamersky.com/z/rdr2/map/">https://www.gamersky.com/z/rdr2/map/</a></p></li></ul></blockquote><h2 id="赌徒"><a href="#赌徒" class="headerlink" title="赌徒"></a>赌徒</h2><p>荒野大镖客2中有四种可以游玩的小游戏，每种小游戏都有简单而不失乐趣的玩法。有些小伙伴可能对这些赌博类型的小游戏不感兴趣，但是想要100%完成度的话是躲不开这些内容的，其中的赌徒挑战里有10项任务。</p><p>四种小游戏的位置和技巧如下：</p><ul><li><strong>快刀戳指缝</strong>：<ul><li>位置：草莓镇（室外），瓦伦丁（酒馆），范霍恩贸易站（室外），帮派营地</li><li>技巧：第一个人是比较简单的，只需要两个按键快速交替按下就能赢；第二个人比较难，一般赢第一个人就可以先退出，再进入游戏，做赌徒挑战够了。</li></ul></li><li><strong>21点</strong>：<ul><li>位置：罗兹（酒馆），范霍恩贸易站（酒馆）</li><li>技巧：一般15及以上就可以停了，11可以冲双倍赌注。</li></ul></li><li><strong>多米诺骨牌</strong>：<ul><li>位置：翡翠牧场车站（60点，无通吃），圣丹尼斯（公园，90点，逢五通吃），黑水镇（室外，90点，逢三通吃）</li><li>技巧：有无通吃规则的玩法不一样<ul><li>无通吃规则：尽量跟着对手的一边走，默认对手没有可以放置在其他位置的牌，让对手多抽牌。</li><li>有通吃规则：计算现有边牌的点数，每回合尽量都拿分。</li></ul></li></ul></li><li><strong>德州扑克</strong>：<ul><li>位置：水镇（酒馆），平脖子车站，瓦伦丁（酒馆），帮派营地，风滚草镇（酒馆），圣丹尼斯（酒馆）</li><li>技巧：纯运气游戏，全压可以吓唬NPC弃牌。</li></ul></li></ul><h2 id="挑战任务"><a href="#挑战任务" class="headerlink" title="挑战任务"></a>挑战任务</h2><p>在《荒野大镖客2》中，挑战任务是游戏中的一项重要玩法，也是100%完成度的必要条件。通过完成挑战任务，你可以在捕兽人处获得加强装备，熟悉游戏的玩法。</p><p>ps: 我在完成所有剧情后狂刷挑战任务，费了不少事。</p><blockquote><p>相关链接：<a href="https://www.gamersky.com/handbook/201811/1127438.shtml">《荒野大镖客2》全挑战任务完成方式简析 挑战任务怎么做</a></p></blockquote><h2 id="附录：制作材料清单"><a href="#附录：制作材料清单" class="headerlink" title="附录：制作材料清单"></a>附录：制作材料清单</h2><h3 id="营地"><a href="#营地" class="headerlink" title="营地"></a>营地</h3><p>通过狩猎获取完美皮毛和若干完美尸体，捐给厨子<strong>皮尔逊</strong>，可以升级帮派营地。</p><h4 id="背包"><a href="#背包" class="headerlink" title="背包"></a>背包</h4><table><thead><tr><th>物品名称</th><th>材料</th></tr></thead><tbody><tr><td>补剂背包</td><td>1*完美的鹿皮，1*完美的公鹿皮，1*完美的麋鹿皮</td></tr><tr><td>原料背包</td><td>1*完美的鹿皮，1*完美的獾皮，1*完美的松鼠皮</td></tr><tr><td>工具背包</td><td>1*完美的鹿皮，1*完美的麋鹿皮，1*完美的山狮皮</td></tr><tr><td>补给品背包</td><td>1*完美的鹿皮，1*完美的野牛皮，1*完美的浣熊皮</td></tr><tr><td>材料背包</td><td>1*完美的鹿皮，1*完美的野猪皮，1*完美的鬣蜥皮</td></tr><tr><td>贵重物背包</td><td>1*完美的鹿皮，1*完美的河狸皮，1*完美的兔皮</td></tr><tr><td>“东部传说”背包</td><td>1*完美的鹿皮，1*完美的美洲狮皮，1*完美的狼皮</td></tr></tbody></table><h3 id="黑市"><a href="#黑市" class="headerlink" title="黑市"></a>黑市</h3><table><thead><tr><th>物品名称</th><th>材料</th></tr></thead><tbody><tr><td>渡鸦爪护身符</td><td>1*旧的黄铜罗盘：需要完成陌生人任务“初级地质学”(第二章)，这是一个收集任务，需要找到10幅岩石雕画，将这10幅雕画的位置通过邮件发给委托人。2天之后你会收到委托人的邀请，应邀后从委托人的木屋中可以获得旧的黄铜罗盘</td></tr><tr><td>鹰爪护符</td><td>1*奖励护符：购买豪华版与终极版特典可获得</td></tr><tr><td>野牛角护符</td><td>1*鲍鱼外壳碎片：在罗兹镇(Rhodes)的房屋中获取。1*银耳环：可以从尸体、房屋或者马匹上搜取。1*传奇野牛角：剥取传奇野牛获得。</td></tr><tr><td>野猪牙护符</td><td>1*钴蓝硅化木：在开场雪地地区，地图的西北部有一个伊莎贝拉湖，湖的顶端区域的山脚下有一个小洞穴，洞穴中有一辆损坏的推车，钴蓝硅化木就放在推车上面的箱子里。1*金耳环：可以从尸体、房屋或者马匹上搜取。1*传说野猪獠牙：剥取传说野猪获得。</td></tr><tr><td>熊爪护身符</td><td>1*石英块：需要完成陌生人任务“诚信之试”(第二章)。这是一个包含30块恐龙骨收集任务。从邮局寄一块找到的恐龙骨寄给委托人，1-2天后石英块就会出现在你的邮箱里。1*白银链条手镯：可以从尸体、房屋或者马匹上搜取。1*传说熊爪：剥取传奇灰熊获得。</td></tr><tr><td>短吻鳄牙护身符</td><td>1*旧式内战手铐：需要完成陌生人任务“抽烟和其他爱好”(第二章)。这是一个包含144张香烟卡收集任务。从邮局寄一套包含12张卡的卡组给委托人，1-2天后旧式内战手铐就会出现在你的邮箱里。1*金手环：可以从尸体、房屋或者马匹上搜取。1*传说短吻鳄牙：剥取传说短吻鳄获得。</td></tr><tr><td>其他</td><td>1*[对应传说动物的身体部位]</td></tr></tbody></table><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a><strong>参考文献</strong></h2><ol><li><p><strong><a href="https://zh.wikipedia.org/wiki/%E7%A2%A7%E8%A1%80%E7%8B%82%E6%AE%BA2">Wikipedia - 荒野大镖客：救赎2</a></strong></p></li><li><p><strong><a href="https://www.gamersky.com/handbook/201810/1118265.shtml">《荒野大镖客2》全传说动物分布图与具体位置</a></strong></p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;center&gt;&lt;img src=&quot;https://img.expreview.com/news/2019/10/10/rdr2_900.jpg&quot;/&gt;&lt;/center&gt;
+
+
+
+&lt;h2 id=&quot;游戏简介-1&quot;&gt;&lt;a href=&quot;#游戏简介-1&quot; class=&quot;headerlink&quot;</summary>
+      
+    
+    
+    
+    <category term="Games" scheme="http://qingshuixifan.github.io/categories/Games/"/>
+    
+    
+    <category term="CN" scheme="http://qingshuixifan.github.io/tags/CN/"/>
+    
+    <category term="Rockstar Games" scheme="http://qingshuixifan.github.io/tags/Rockstar-Games/"/>
+    
+    <category term="Adventure" scheme="http://qingshuixifan.github.io/tags/Adventure/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Git】Git Cheatsheet</title>
+    <link href="http://qingshuixifan.github.io/2021/02/28/%E3%80%90Git%E3%80%91Git%20Cheatsheet/"/>
+    <id>http://qingshuixifan.github.io/2021/02/28/%E3%80%90Git%E3%80%91Git%20Cheatsheet/</id>
+    <published>2021-02-28T05:27:16.041Z</published>
+    <updated>2021-02-28T05:27:16.041Z</updated>
+    
+    <content type="html"><![CDATA[<p> <img src="https://s3.ax1x.com/2020/11/12/BzCsNF.png" alt="x"></p><p><img src="https://s3.ax1x.com/2020/11/12/BzCrAU.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt; &lt;img src=&quot;https://s3.ax1x.com/2020/11/12/BzCsNF.png&quot; alt=&quot;x&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://s3.ax1x.com/2020/11/12/BzCrAU.png&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="IT" scheme="http://qingshuixifan.github.io/categories/IT/"/>
+    
+    
+    <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
+    
+    <category term="Git" scheme="http://qingshuixifan.github.io/tags/Git/"/>
+    
+  </entry>
+  
+</feed>
