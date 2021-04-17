@@ -70,34 +70,6 @@
   </entry>
   
   <entry>
-    <title>【Algorithm】Binary Search</title>
-    <link href="http://qingshuixifan.github.io/2021/02/28/%E3%80%90Algorithm%E3%80%91Binary%20Search/"/>
-    <id>http://qingshuixifan.github.io/2021/02/28/%E3%80%90Algorithm%E3%80%91Binary%20Search/</id>
-    <published>2021-02-28T05:27:16.041Z</published>
-    <updated>2021-02-28T05:27:16.041Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Applicable-Scenarios"><a href="#Applicable-Scenarios" class="headerlink" title="Applicable Scenarios"></a>Applicable Scenarios</h2><ul><li>Search a certain number in a ** sorted ** array, under some condition.</li></ul><h2 id="Code-Snippets"><a href="#Code-Snippets" class="headerlink" title="Code Snippets"></a>Code Snippets</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Recursive</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bsearch</span>(<span class="params">nums: <span class="built_in">list</span>, low: <span class="built_in">int</span>, high: <span class="built_in">int</span>, value</span>) -&gt; int:</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    在数组nums的下标low和high之间，查找value，返回下标</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">if</span> low &gt; high:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span></span><br><span class="line">    middle = low + (high - low) &gt;&gt; <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> nums[middle] == value:  <span class="comment"># 找到了</span></span><br><span class="line">        <span class="keyword">return</span> middle</span><br><span class="line">    <span class="keyword">elif</span> nums[middle] &gt; value:</span><br><span class="line">        <span class="keyword">return</span> bsearch(nums, low, middle<span class="number">-1</span>, value)  <span class="comment"># high = middle-1</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> bsearch(nums, middle+<span class="number">1</span>, high, value)  <span class="comment"># low = middle+1</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Iterative</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bsearch</span>(<span class="params">nums: List[<span class="built_in">int</span>], target: <span class="built_in">int</span></span>) -&gt; int:</span></span><br><span class="line">    left= <span class="number">0</span></span><br><span class="line">    right=<span class="built_in">len</span>(nums) - <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> left &lt;= right: <span class="comment"># 区间没有变成1个元素，就查找</span></span><br><span class="line">        middle =  left + ((right-left) &gt;&gt; <span class="number">1</span>)  <span class="comment"># 计算中间下标</span></span><br><span class="line">        <span class="keyword">if</span> nums[middle] == target:  <span class="comment"># 找到了</span></span><br><span class="line">            <span class="keyword">return</span> middle</span><br><span class="line">        <span class="keyword">elif</span> nums[middle] &lt; target:  <span class="comment"># 中间下标比查找的值小，继续在右边查找</span></span><br><span class="line">            left = middle + <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:  <span class="comment"># 中间下标比查找的值大，继续在左边查找</span></span><br><span class="line">            right = middle - <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;Applicable-Scenarios&quot;&gt;&lt;a href=&quot;#Applicable-Scenarios&quot; class=&quot;headerlink&quot; title=&quot;Applicable Scenarios&quot;&gt;&lt;/a&gt;Applicable Scenarios&lt;/h2&gt;&lt;</summary>
-      
-    
-    
-    
-    <category term="Algorithm" scheme="http://qingshuixifan.github.io/categories/Algorithm/"/>
-    
-    
-    <category term="Algorithm" scheme="http://qingshuixifan.github.io/tags/Algorithm/"/>
-    
-    <category term="Binary Search" scheme="http://qingshuixifan.github.io/tags/Binary-Search/"/>
-    
-    <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【Books】C++ Primer Plus 电子版PDF带书签</title>
     <link href="http://qingshuixifan.github.io/2021/02/28/%E3%80%90Books%E3%80%91C++%20Primer%20Plus%20pdf%E4%B8%8B%E8%BD%BD/"/>
     <id>http://qingshuixifan.github.io/2021/02/28/%E3%80%90Books%E3%80%91C++%20Primer%20Plus%20pdf%E4%B8%8B%E8%BD%BD/</id>
@@ -146,11 +118,70 @@
     <category term="Data Structure" scheme="http://qingshuixifan.github.io/categories/Data-Structure/"/>
     
     
-    <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
-    
     <category term="Data Structure" scheme="http://qingshuixifan.github.io/tags/Data-Structure/"/>
     
     <category term="Union-find" scheme="http://qingshuixifan.github.io/tags/Union-find/"/>
+    
+    <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Algorithm】Binary Search</title>
+    <link href="http://qingshuixifan.github.io/2021/02/28/%E3%80%90Algorithm%E3%80%91Binary%20Search/"/>
+    <id>http://qingshuixifan.github.io/2021/02/28/%E3%80%90Algorithm%E3%80%91Binary%20Search/</id>
+    <published>2021-02-28T05:27:16.041Z</published>
+    <updated>2021-02-28T05:27:16.041Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Applicable-Scenarios"><a href="#Applicable-Scenarios" class="headerlink" title="Applicable Scenarios"></a>Applicable Scenarios</h2><ul><li>Search a certain number in a ** sorted ** array, under some condition.</li></ul><h2 id="Code-Snippets"><a href="#Code-Snippets" class="headerlink" title="Code Snippets"></a>Code Snippets</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Recursive</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bsearch</span>(<span class="params">nums: <span class="built_in">list</span>, low: <span class="built_in">int</span>, high: <span class="built_in">int</span>, value</span>) -&gt; int:</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    在数组nums的下标low和high之间，查找value，返回下标</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">if</span> low &gt; high:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span></span><br><span class="line">    middle = low + (high - low) &gt;&gt; <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> nums[middle] == value:  <span class="comment"># 找到了</span></span><br><span class="line">        <span class="keyword">return</span> middle</span><br><span class="line">    <span class="keyword">elif</span> nums[middle] &gt; value:</span><br><span class="line">        <span class="keyword">return</span> bsearch(nums, low, middle<span class="number">-1</span>, value)  <span class="comment"># high = middle-1</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> bsearch(nums, middle+<span class="number">1</span>, high, value)  <span class="comment"># low = middle+1</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Iterative</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bsearch</span>(<span class="params">nums: List[<span class="built_in">int</span>], target: <span class="built_in">int</span></span>) -&gt; int:</span></span><br><span class="line">    left= <span class="number">0</span></span><br><span class="line">    right=<span class="built_in">len</span>(nums) - <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> left &lt;= right: <span class="comment"># 区间没有变成1个元素，就查找</span></span><br><span class="line">        middle =  left + ((right-left) &gt;&gt; <span class="number">1</span>)  <span class="comment"># 计算中间下标</span></span><br><span class="line">        <span class="keyword">if</span> nums[middle] == target:  <span class="comment"># 找到了</span></span><br><span class="line">            <span class="keyword">return</span> middle</span><br><span class="line">        <span class="keyword">elif</span> nums[middle] &lt; target:  <span class="comment"># 中间下标比查找的值小，继续在右边查找</span></span><br><span class="line">            left = middle + <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:  <span class="comment"># 中间下标比查找的值大，继续在左边查找</span></span><br><span class="line">            right = middle - <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Applicable-Scenarios&quot;&gt;&lt;a href=&quot;#Applicable-Scenarios&quot; class=&quot;headerlink&quot; title=&quot;Applicable Scenarios&quot;&gt;&lt;/a&gt;Applicable Scenarios&lt;/h2&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="Algorithm" scheme="http://qingshuixifan.github.io/categories/Algorithm/"/>
+    
+    
+    <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
+    
+    <category term="Algorithm" scheme="http://qingshuixifan.github.io/tags/Algorithm/"/>
+    
+    <category term="Binary Search" scheme="http://qingshuixifan.github.io/tags/Binary-Search/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Games】Oxygen Not Included（缺氧）（持续更新中）</title>
+    <link href="http://qingshuixifan.github.io/2021/02/28/%E3%80%90Games%E3%80%91Oxygen%20Not%20Included%EF%BC%88%E7%BC%BA%E6%B0%A7%EF%BC%89/"/>
+    <id>http://qingshuixifan.github.io/2021/02/28/%E3%80%90Games%E3%80%91Oxygen%20Not%20Included%EF%BC%88%E7%BC%BA%E6%B0%A7%EF%BC%89/</id>
+    <published>2021-02-28T05:27:16.041Z</published>
+    <updated>2021-02-28T05:27:16.041Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://s3.ax1x.com/2021/01/19/sgyz0P.jpg"><img src="https://s3.ax1x.com/2021/01/19/sgyz0P.jpg" alt="sgyz0P.jpg"></a></p><h2 id="游戏简介"><a href="#游戏简介" class="headerlink" title="游戏简介"></a>游戏简介</h2><p>《<strong>缺氧</strong>》（英语：<em>Oxygen Not Included</em>）是一款透过<a href="https://zh.wikipedia.org/wiki/Steam">Steam</a>网络平台发行由Klei Entertainment制作的太空<a href="https://zh.wikipedia.org/wiki/%E6%A8%A1%E6%93%AC%E9%81%8A%E6%88%B2">模拟策略</a>游戏，采用2D横版布局，玩家需要管理复制人，让他们挖掘、建立并维护起一个地下的基地，为此，玩家需要水、食物、氧气、适当的调节压力和适宜的温度等条件来维持复制人生存并满足他们的其他需求。<sup>[1]</sup></p><p>游戏于2017年5月18日登陆Steam，中国区售价58元。2019年7月30日完成最后更新，一般使用者可以随时购买。<sup>[1]</sup></p><h2 id="新手攻略"><a href="#新手攻略" class="headerlink" title="新手攻略"></a>新手攻略</h2><h3 id="水管优先级策略"><a href="#水管优先级策略" class="headerlink" title="水管优先级策略"></a>水管优先级策略</h3><blockquote><p>白口串联，灌满再走；<br>绿口串联，空了再走；<br>优先供水用绿口，绿口优先；<br>优先取水用白口，白口滞后。</p></blockquote><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol><li><a href="https://zh.wikipedia.org/wiki/%E7%BC%BA%E6%B0%A7_(%E9%81%8A%E6%88%B2)">Wikipedia - 缺氧 (游戏)</a></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://s3.ax1x.com/2021/01/19/sgyz0P.jpg&quot;&gt;&lt;img src=&quot;https://s3.ax1x.com/2021/01/19/sgyz0P.jpg&quot; alt=&quot;sgyz0P.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id</summary>
+      
+    
+    
+    
+    <category term="Games" scheme="http://qingshuixifan.github.io/categories/Games/"/>
+    
+    
+    <category term="CN" scheme="http://qingshuixifan.github.io/tags/CN/"/>
+    
+    <category term="klei" scheme="http://qingshuixifan.github.io/tags/klei/"/>
+    
+    <category term="Survival" scheme="http://qingshuixifan.github.io/tags/Survival/"/>
+    
+    <category term="Automation" scheme="http://qingshuixifan.github.io/tags/Automation/"/>
     
   </entry>
   
@@ -187,51 +218,18 @@
   </entry>
   
   <entry>
-    <title>【Games】Oxygen Not Included（缺氧）（持续更新中）</title>
-    <link href="http://qingshuixifan.github.io/2021/02/28/%E3%80%90Games%E3%80%91Oxygen%20Not%20Included%EF%BC%88%E7%BC%BA%E6%B0%A7%EF%BC%89/"/>
-    <id>http://qingshuixifan.github.io/2021/02/28/%E3%80%90Games%E3%80%91Oxygen%20Not%20Included%EF%BC%88%E7%BC%BA%E6%B0%A7%EF%BC%89/</id>
-    <published>2021-02-28T05:27:16.041Z</published>
-    <updated>2021-02-28T05:27:16.041Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://s3.ax1x.com/2021/01/19/sgyz0P.jpg"><img src="https://s3.ax1x.com/2021/01/19/sgyz0P.jpg" alt="sgyz0P.jpg"></a></p><h2 id="游戏简介"><a href="#游戏简介" class="headerlink" title="游戏简介"></a>游戏简介</h2><p>《<strong>缺氧</strong>》（英语：<em>Oxygen Not Included</em>）是一款透过<a href="https://zh.wikipedia.org/wiki/Steam">Steam</a>网络平台发行由Klei Entertainment制作的太空<a href="https://zh.wikipedia.org/wiki/%E6%A8%A1%E6%93%AC%E9%81%8A%E6%88%B2">模拟策略</a>游戏，采用2D横版布局，玩家需要管理复制人，让他们挖掘、建立并维护起一个地下的基地，为此，玩家需要水、食物、氧气、适当的调节压力和适宜的温度等条件来维持复制人生存并满足他们的其他需求。<sup>[1]</sup></p><p>游戏于2017年5月18日登陆Steam，中国区售价58元。2019年7月30日完成最后更新，一般使用者可以随时购买。<sup>[1]</sup></p><h2 id="新手攻略"><a href="#新手攻略" class="headerlink" title="新手攻略"></a>新手攻略</h2><h3 id="水管优先级策略"><a href="#水管优先级策略" class="headerlink" title="水管优先级策略"></a>水管优先级策略</h3><blockquote><p>白口串联，灌满再走；<br>绿口串联，空了再走；<br>优先供水用绿口，绿口优先；<br>优先取水用白口，白口滞后。</p></blockquote><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol><li><a href="https://zh.wikipedia.org/wiki/%E7%BC%BA%E6%B0%A7_(%E9%81%8A%E6%88%B2)">Wikipedia - 缺氧 (游戏)</a></li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://s3.ax1x.com/2021/01/19/sgyz0P.jpg&quot;&gt;&lt;img src=&quot;https://s3.ax1x.com/2021/01/19/sgyz0P.jpg&quot; alt=&quot;sgyz0P.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id</summary>
-      
-    
-    
-    
-    <category term="Games" scheme="http://qingshuixifan.github.io/categories/Games/"/>
-    
-    
-    <category term="CN" scheme="http://qingshuixifan.github.io/tags/CN/"/>
-    
-    <category term="klei" scheme="http://qingshuixifan.github.io/tags/klei/"/>
-    
-    <category term="Survival" scheme="http://qingshuixifan.github.io/tags/Survival/"/>
-    
-    <category term="Automation" scheme="http://qingshuixifan.github.io/tags/Automation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【Git】Git Cheatsheet</title>
+    <title>【General】Cheatsheets in ALL!!!</title>
     <link href="http://qingshuixifan.github.io/2021/02/28/%E3%80%90Git%E3%80%91Git%20Cheatsheet/"/>
     <id>http://qingshuixifan.github.io/2021/02/28/%E3%80%90Git%E3%80%91Git%20Cheatsheet/</id>
     <published>2021-02-28T05:27:16.041Z</published>
-    <updated>2021-02-28T05:27:16.041Z</updated>
+    <updated>2021-04-17T04:47:08.426Z</updated>
     
-    <content type="html"><![CDATA[<p> <img src="https://s3.ax1x.com/2020/11/12/BzCsNF.png" alt="x"></p><p><img src="https://s3.ax1x.com/2020/11/12/BzCrAU.png"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><center><embed src="https://education.github.com/git-cheat-sheet-education.pdf" width="100%" height="700px"></center><h1 id="VIM"><a href="#VIM" class="headerlink" title="VIM"></a>VIM</h1><center><embed src="https://www.cs.cmu.edu/~15131/f17/topics/vim/vim-cheatsheet.pdf" width="100%" height="700px"></center>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt; &lt;img src=&quot;https://s3.ax1x.com/2020/11/12/BzCsNF.png&quot; alt=&quot;x&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://s3.ax1x.com/2020/11/12/BzCrAU.png&quot;&gt;&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;h1 id=&quot;Git&quot;&gt;&lt;a href=&quot;#Git&quot; class=&quot;headerlink&quot; title=&quot;Git&quot;&gt;&lt;/a&gt;Git&lt;/h1&gt;&lt;center&gt;&lt;embed src=&quot;https://education.github.com/git-cheat-sheet-educ</summary>
       
     
     
@@ -239,9 +237,7 @@
     <category term="IT" scheme="http://qingshuixifan.github.io/categories/IT/"/>
     
     
-    <category term="EN" scheme="http://qingshuixifan.github.io/tags/EN/"/>
-    
-    <category term="Git" scheme="http://qingshuixifan.github.io/tags/Git/"/>
+    <category term="Cheat sheet" scheme="http://qingshuixifan.github.io/tags/Cheat-sheet/"/>
     
   </entry>
   
